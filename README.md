@@ -1,3 +1,3 @@
 # Drunk Design Website
 
-drunkdesign.gr website built with NextJS 15 / Drupal.
+drunkdesign.gr website built with NextJS 15.
