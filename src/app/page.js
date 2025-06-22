@@ -19,8 +19,8 @@ export default function Home() {
         <div className='container mx-auto mt-10 px-4 lg:mt-[72px]'>
           <AnimatedRichHeading
             blocks={[
-              `<h1 class='inline text-[26px] font-bold md:text-[50px]'>We are a <i class='font-normal'>creative studio</i> formed by a <u>visual communication designer</u> and a <u>developer</u>.</h1>`,
-              `<h2 class='inline text-[26px] font-bold md:text-[50px]'>We <i class='font-normal'>specialize</i> in visual identity, product and packaging design, websites, social media content, and video production delivering integrated branding and digital presence solutions.</h2>`,
+              `<h1 class='inline text-[26px] font-bold md:text-[50px]'>We are a <i class='font-medium'>creative studio</i> formed by a <u>visual communication designer</u> and a <u>developer</u>.</h1>`,
+              `<h2 class='inline text-[26px] font-bold md:text-[50px]'>We <i class='font-medium'>specialize</i> in visual identity, product and packaging design, websites, social media content, and video production delivering integrated branding and digital presence solutions.</h2>`,
             ]}
           />
         </div>
@@ -53,7 +53,13 @@ export default function Home() {
           >
             <path stroke='#fff' strokeWidth='2' d='M86.359 80.283 126 40.642 86.359 1M0 41.49h124.58' />
           </svg>
-          <svg className='inline-block md:hidden' xmlns='http://www.w3.org/2000/svg' width='80' height='51' fill='none'>
+          <svg
+            className='inline-block shrink-0 md:hidden'
+            xmlns='http://www.w3.org/2000/svg'
+            width='80'
+            height='51'
+            fill='none'
+          >
             <path stroke='#fff' strokeWidth='2' d='M53.46 50.08 78 25.54 53.46 1M0 26.064h77.121' />
           </svg>
         </section>

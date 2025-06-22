@@ -20,6 +20,22 @@ export default function MiddlePack() {
     <section className='middle-pack container mx-auto my-14 px-4 lg:my-40'>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
         <div>
+          <motion.div
+            className='mb-14 md:mt-10 md:mb-0 lg:hidden'
+            initial='offscreen'
+            whileInView='onscreen'
+            viewport={{ once: true, amount: 0.8 }}
+            variants={IMAGE_VARIANTS}
+          >
+            <Image
+              src='/lapalma-beauty-house.webp'
+              width='395'
+              height='83'
+              alt='La Palma Beauty House logo'
+              loading='lazy'
+              className='mx-auto'
+            />
+          </motion.div>
           <div className='mx-auto mb-14 md:mb-0'>
             <RevealImagePolygon src='/atrotos.webp' alt='Atrotos' loading='lazy' />
           </div>
@@ -41,7 +57,7 @@ export default function MiddlePack() {
         </div>
         <div>
           <motion.div
-            className='mb-14 md:mt-10 md:mb-0'
+            className='mb-14 hidden md:mt-10 md:mb-0 lg:inline-block'
             initial='offscreen'
             whileInView='onscreen'
             viewport={{ once: true, amount: 0.8 }}

@@ -8,7 +8,7 @@ export default function RevealImagePolygon({ src, alt, loading }) {
   const isInView = useInView(ref, { once: true, amount: 0.45 })
 
   return (
-    <div className='relative h-auto w-full overflow-hidden rounded-lg' ref={ref}>
+    <div className='relative h-auto w-full overflow-hidden' ref={ref}>
       <motion.img
         src={src}
         alt={alt}
