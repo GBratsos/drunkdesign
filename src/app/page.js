@@ -7,6 +7,7 @@ import TopPack from './components/topPack'
 import OilPack from './components/oilPack'
 import MiddlePack from './components/middlePack'
 import Header from './components/header'
+import AnimatedRichHeading from './components/AnimatedRichHeading'
 import BackToTop from './components/backToTop'
 
 export default function Home() {
@@ -16,14 +17,12 @@ export default function Home() {
         <BackToTop />
         <Header />
         <div className='container mx-auto mt-10 px-4 lg:mt-[72px]'>
-          <h1 className='inline text-[26px] font-bold md:text-[50px]'>
-            We are a <i className='font-normal'>creative studio</i> formed by a <u>visual communication designer</u> and
-            a <u>developer</u>.{' '}
-          </h1>
-          <h2 className='inline text-[26px] font-bold md:text-[50px]'>
-            We <i className='font-normal'>specialize</i> in visual identity, product and packaging design, websites,
-            social media content, and video production delivering integrated branding and digital presence solutions.
-          </h2>
+          <AnimatedRichHeading
+            blocks={[
+              `<h1 class='inline text-[26px] font-bold md:text-[50px]'>We are a <i class='font-normal'>creative studio</i> formed by a <u>visual communication designer</u> and a <u>developer</u>.</h1>`,
+              `<h2 class='inline text-[26px] font-bold md:text-[50px]'>We <i class='font-normal'>specialize</i> in visual identity, product and packaging design, websites, social media content, and video production delivering integrated branding and digital presence solutions.</h2>`,
+            ]}
+          />
         </div>
         <TopPack />
         <OilPack />
