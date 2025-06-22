@@ -13,6 +13,21 @@ export const metadata = {
   title: 'Drunk Design | Creative studio',
   description:
     'We are a creative studio formed by a visual communication designer and a developer. We specialize in visual identity, product and packaging design, websites, social media content, and video production delivering integrated branding and digital presence solutions.',
+  keywords: [
+    'creative studio Greece',
+    'branding agency',
+    'visual identity design',
+    'product design',
+    'packaging design',
+    'website design Greece',
+    'social media content design',
+    'video production studio',
+    'digital branding solutions',
+    'drunk design',
+    'graphic design studio',
+    'web design agency',
+    'brand identity experts',
+  ],
   openGraph: {
     title: 'Drunk Design | Creative studio',
     description:
