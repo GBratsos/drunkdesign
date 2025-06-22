@@ -1,103 +1,64 @@
-import Image from "next/image";
+import Image from 'next/image'
+import Awards from './components/awards'
+import Footer from './components/footer'
+import BottomPack from './components/bottomPack'
+import Illustrations from './components/illustrations'
+import TopPack from './components/topPack'
+import OilPack from './components/oilPack'
+import MiddlePack from './components/middlePack'
+import Header from './components/header'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <main>
+        <Header />
+        <div className='container mx-auto mt-10 px-4 lg:mt-[72px]'>
+          <h1 className='inline text-[26px] font-bold md:text-[50px]'>
+            We are a <i className='font-normal'>creative studio</i> formed by a <u>visual communication designer</u> and
+            a <u>developer</u>.{' '}
+          </h1>
+          <h2 className='inline text-[26px] font-bold md:text-[50px]'>
+            We <i className='font-normal'>specialize</i> in visual identity, product and packaging design, websites,
+            social media content, and video production delivering integrated branding and digital presence solutions.
+          </h2>
         </div>
+        <TopPack />
+        <OilPack />
+        <MiddlePack />
+        <Illustrations />
+        <BottomPack />
+        <section className='container mx-auto px-4'>
+          <Image src='/pavlos-biratsis-tailor.webp' width='1091' height='663' alt='Sartoria Biratsis' loading='lazy' />
+        </section>
+        <section className='relative container mx-auto my-14 flex items-center justify-between gap-4 px-4 lg:my-40'>
+          <h3 className='text-2xl hover:underline md:text-[40px]'>
+            <a
+              href='mailto:info@drunkdesign.gr'
+              className='before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0'
+            >
+              <strong>
+                Have a <u>project</u>?
+              </strong>{' '}
+              <i>Get in touch</i> <strong>with us today!</strong>
+            </a>
+          </h3>
+          <svg
+            className='hidden md:inline-block'
+            xmlns='http://www.w3.org/2000/svg'
+            width='128'
+            height='81'
+            fill='none'
+          >
+            <path stroke='#fff' strokeWidth='2' d='M86.359 80.283 126 40.642 86.359 1M0 41.49h124.58' />
+          </svg>
+          <svg className='inline-block md:hidden' xmlns='http://www.w3.org/2000/svg' width='80' height='51' fill='none'>
+            <path stroke='#fff' strokeWidth='2' d='M53.46 50.08 78 25.54 53.46 1M0 26.064h77.121' />
+          </svg>
+        </section>
+        <Awards />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      <Footer textColor='text-white' svgColor='#fff' marginClasses='mt-14 mb-6 md:mt-40 md:mb-12 md:my-6' />
+    </>
+  )
 }

@@ -1,0 +1,31 @@
+# llm.txt for drunkdesign.gr
+User-Agent: *
+Allow: /
+
+# Απαγόρευση πρόσβασης σε sensitive routes (αν υπάρχουν)
+Disallow: /admin
+Disallow: /api
+Disallow: /checkout
+Disallow: /login
+
+# Custom directives for known LLM agents
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: Amazon-AI
+Allow: /
