@@ -7,11 +7,13 @@ import TopPack from './components/topPack'
 import OilPack from './components/oilPack'
 import MiddlePack from './components/middlePack'
 import Header from './components/header'
+import BackToTop from './components/backToTop'
 
 export default function Home() {
   return (
     <>
       <main>
+        <BackToTop />
         <Header />
         <div className='container mx-auto mt-10 px-4 lg:mt-[72px]'>
           <h1 className='inline text-[26px] font-bold md:text-[50px]'>
