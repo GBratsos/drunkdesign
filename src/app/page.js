@@ -1,71 +1,44 @@
-import Image from 'next/image'
-import Awards from './components/awards'
 import Footer from './components/footer'
-import BottomPack from './components/bottomPack'
-import Illustrations from './components/illustrations'
-import TopPack from './components/topPack'
-import OilPack from './components/oilPack'
-import MiddlePack from './components/middlePack'
 import Header from './components/header'
 import AnimatedRichHeading from './components/AnimatedRichHeading'
 import BackToTop from './components/backToTop'
+import ImageGroup from './components/ImageGroup'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main className='container mx-auto'>
         <BackToTop />
         <Header />
         <div className='container mx-auto mt-10 px-4 lg:mt-[72px]'>
           <AnimatedRichHeading
             blocks={[
-              `<h1 class='inline text-[26px] font-bold md:text-[50px]'>We are a <i class='font-medium'>creative studio</i> formed by a <u>visual communication designer</u> and a <u>developer</u>.</h1>`,
-              `<h2 class='inline text-[26px] font-bold md:text-[50px]'>We <i class='font-medium'>specialize</i> in visual identity, product and packaging design, websites, social media content, and video production delivering integrated branding and digital presence solutions.</h2>`,
+              `<h1 class='inline text-[26px] font-bold md:text-[32px]'>Η αρχιτεκτονική είναι μια και σίγουρα είναι μια τέχνη. Η τεχνική είναι το κύριο εργαλείο αυτής της τέχνης. </h1>`,
+              `<h2 class='inline text-[26px] font-bold md:text-[32px]'>Ένα τεχνικό έργο δεν είναι πάντα ένα αρχιτεκτόνημα. Αλλά ένα αληθινό αρχιτεκτόνημα είναι σίγουρα και ένα άρτιο τεχνικό έργο. </h2>`,
+              `<h3 class='inline text-[26px] font-bold md:text-[32px]'>Δεν υπάρχουν λοιπόν δύο κατευθύνσεις αλλά μόνο μια, ένας δρόμος που τον ανιχνεύει κανείς και τον ακολουθεί όπως μπορεί.</h3>`
+              
             ]}
           />
         </div>
-        <TopPack />
-        <OilPack />
-        <MiddlePack />
-        <Illustrations />
-        <BottomPack />
-        <section className='container mx-auto px-4'>
-          <Image src='/pavlos-biratsis-tailor.webp' width='1091' height='663' alt='Sartoria Biratsis' loading='lazy' />
+        <div className='mt-7 mb-10 md:mt-14 md:mb-20 max-w-[648px] ml-auto mr-0 px-4'>
+          <p className=''>
+                Απάντηση σε ερώτηση προς τον <b>Κυριάκο Κρόκο</b> (καταξιωμένο Έλληνα αρχιτέκτονα 1941-1998) για το αν η αρχιτεκτονική έχει <u>δύο κατευθύνσεις</u>, αυτή όπου η αρχιτεκτονική είναι <u>τέχνη</u> και η άλλη που είναι περισσότερο <u>τεχνική</u>.
+          </p>
+        </div>
+        <ImageGroup image1="/plstudio-01-01.webp" alt1="Front" image2="/plstudio-01-02.webp" alt2="Garden" image3="/plstudio-01-03.webp" alt3="Rear" />
+        <ImageGroup image1="/plstudio-02-01.webp" alt1="Front" image2="/plstudio-02-02.webp" alt2="Top" image3="/plstudio-02-03.webp" alt3="Rear" />
+        <ImageGroup image1="/plstudio-03-01.webp" alt1="Market" image2="/plstudio-03-02.webp" alt2="Town Square" image3="/plstudio-03-03.webp" alt3="Front Night" />
+        <ImageGroup image1="/plstudio-04-01.webp" alt1="Bedroom" image2="/plstudio-04-02.webp" alt2="Room" image3="/plstudio-04-03.webp" alt3="Bathroom" />
+
+        <section className='relative container mx-auto flex items-center justify-between gap-4 px-4'>
+          
+          <p className='text-foreground text-[40px] mt-20 mb-20'>
+              <b>Have a project?</b> Get in <Link href='mailto:info@plstudio.gr' target='_blank' rel='noopener noreferer'><u>touch with us</u></Link> today!
+          </p>
         </section>
-        <section className='relative container mx-auto my-14 flex items-center justify-between gap-4 px-4 lg:my-40'>
-          <h3 className='text-2xl hover:underline md:text-[40px]'>
-            <a
-              href='mailto:info@drunkdesign.gr'
-              className='before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0'
-            >
-              <strong>
-                Have a <u>project</u>?
-              </strong>{' '}
-              <i>Get in touch</i> <strong>with us today!</strong>
-            </a>
-          </h3>
-          <svg
-            className='hidden shrink-0 md:inline-block'
-            xmlns='http://www.w3.org/2000/svg'
-            width='128'
-            height='81'
-            fill='none'
-          >
-            <path stroke='#fff' strokeWidth='2' d='M86.359 80.283 126 40.642 86.359 1M0 41.49h124.58' />
-          </svg>
-          <svg
-            className='inline-block shrink-0 md:hidden'
-            xmlns='http://www.w3.org/2000/svg'
-            width='80'
-            height='51'
-            fill='none'
-          >
-            <path stroke='#fff' strokeWidth='2' d='M53.46 50.08 78 25.54 53.46 1M0 26.064h77.121' />
-          </svg>
-        </section>
-        <Awards />
       </main>
-      <Footer textColor='text-white' svgColor='#fff' marginClasses='mt-14 mb-6 md:mt-40 md:mb-12 md:my-6' />
+      <Footer textColor='text-foreground' marginClasses='mt-4' svgColor='#333' />
     </>
   )
 }

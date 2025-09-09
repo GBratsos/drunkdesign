@@ -22,5 +22,17 @@
     "html-react-parser": "^5.2.5",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "tailwindcss": "^4"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GBratsos/drunkdesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GBratsos/drunkdesign/issues"
+  },
+  "homepage": "https://github.com/GBratsos/drunkdesign#readme"
 }

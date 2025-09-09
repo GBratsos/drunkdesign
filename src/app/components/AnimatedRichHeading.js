@@ -124,7 +124,6 @@ export default function AnimatedRichHeading({ blocks }) {
           html={html}
           trigger={played.has(i)}
           isLast={i === blocks.length - 1}
-          showCursor={i === blocks.length - 1 && isDone}
           onComplete={handleComplete}
         />
       ))}
