@@ -34,6 +34,14 @@ export const metadata = {
       'We are a creative studio formed by a visual communication designer and a developer. We specialize in visual identity, product and packaging design, websites, social media content, and video production delivering integrated branding and digital presence solutions.',
     url: 'https://www.drunkdesign.gr/',
     sitename: 'Drunk Design | Creative studio',
+    images: [
+      {
+        url: 'https://drunkdesign.gr/logo.svg',
+        alt: 'Drunk Design | Creative studio',
+        width: 1200,
+        height: 630,
+      },
+    ],
     locale: 'en_US',
     type: 'website',
   },
