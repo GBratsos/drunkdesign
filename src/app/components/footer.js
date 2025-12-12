@@ -16,7 +16,7 @@ export default function Footer({ textColor, marginClasses, svgColor }) {
           </clipPath>
         </defs>
       </svg>
-      <p className={`${textColor} text-right font-semibold md:text-left`}>&copy; 2025</p>
+      <p className={`${textColor} text-right font-semibold md:text-left`}>&copy; 2026</p>
       <a className={`${textColor} font-semibold hover:underline`} href='mailto:info@drunkdesign.gr'>
         info@drunkdesign.gr
       </a>
